@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="text-align:center;color:blue;">Numbers</h1>
+<script>
+function decimals(n, d) {
+ if ((typeof n !== 'number') || (typeof d !== 'number'))
+   return false;
+    	n = parseFloat(n) || 0;
+	return n.toFixed(d);
+	}
+document.write(decimals(2.100212, 2)+"<br>");
+document.write(decimals(2.100212, 3)+"<br>");
+document.write(decimals(2100, 2)+"<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Reversing a String</h2>
+<p>Display the first array element, after a string split,reverse,join:</p>
+<p id="demo"></p>
+<script>
+try {
+  var x = myFunction("hello");
+document.getElementById("demo").innerHTML = x;
+function myFunction(str) {
+  return str.split("").reverse().join("");
+}
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+</script>
+
+</body>
+</html>
